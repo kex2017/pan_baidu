@@ -1,0 +1,4 @@
+-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections --asm --interleave --asm_dir ".\\lst\\" -I.\Libraries -I.\Include -I.\Users --c99
+-I D:\Keil\ARM\RV31\INC
+-I D:\Keil\ARM\CMSIS\Include
+-D__LCDDISPLAY_BTL001_LB_H -o .\obj\nano1xx_sys.o --list_dir ".\\lst\\" --list --omf_browse .\obj\nano1xx_sys.crf --depend .\obj\nano1xx_sys.d --feedback ".\obj\START_KIT.fed" "Libraries\nano1xx_sys.c"

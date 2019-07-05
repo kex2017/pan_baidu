@@ -1,0 +1,10 @@
+.\obj\nano1xx_sys.o: Libraries\nano1xx_sys.c
+.\obj\nano1xx_sys.o: D:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\obj\nano1xx_sys.o: .\Include\nano1xx_sys.h
+.\obj\nano1xx_sys.o: .\Include\nano1xx.h
+.\obj\nano1xx_sys.o: D:\Keil\ARM\CMSIS\Include\core_cm0.h
+.\obj\nano1xx_sys.o: D:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\obj\nano1xx_sys.o: D:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+.\obj\nano1xx_sys.o: D:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+.\obj\nano1xx_sys.o: .\Include\system_nano1xx.h
+.\obj\nano1xx_sys.o: .\Include\nano1xx_assert.h

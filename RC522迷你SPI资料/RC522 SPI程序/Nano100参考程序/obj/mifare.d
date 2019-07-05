@@ -1,0 +1,15 @@
+.\obj\mifare.o: Users\Mifare.c
+.\obj\mifare.o: C:\Keil\ARM\RV31\INC\string.h
+.\obj\mifare.o: .\Include\nano1xx_gpio.h
+.\obj\mifare.o: .\Include\nano1xx.h
+.\obj\mifare.o: C:\Keil\ARM\RV31\INC\core_cm0.h
+.\obj\mifare.o: C:\Keil\ARM\RV31\INC\stdint.h
+.\obj\mifare.o: .\Include\system_nano1xx.h
+.\obj\mifare.o: .\Include\nano1xx_spi.h
+.\obj\mifare.o: .\Include\nano1xx_assert.h
+.\obj\mifare.o: Users\public.h
+.\obj\mifare.o: Users\RegCtrl.h
+.\obj\mifare.o: Users\Rc522Reg.h
+.\obj\mifare.o: Users\OpCtrl.h
+.\obj\mifare.o: Users\Mifare.h
+.\obj\mifare.o: Users\ErrCode.h

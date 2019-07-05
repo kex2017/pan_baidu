@@ -1,0 +1,12 @@
+.\obj\nano1xx_spi.o: Libraries\nano1xx_spi.c
+.\obj\nano1xx_spi.o: D:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\obj\nano1xx_spi.o: D:\Keil\ARM\ARMCC\bin\..\include\string.h
+.\obj\nano1xx_spi.o: .\Include\nano1xx_sys.h
+.\obj\nano1xx_spi.o: .\Include\nano1xx.h
+.\obj\nano1xx_spi.o: D:\Keil\ARM\CMSIS\Include\core_cm0.h
+.\obj\nano1xx_spi.o: D:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\obj\nano1xx_spi.o: D:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+.\obj\nano1xx_spi.o: D:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+.\obj\nano1xx_spi.o: .\Include\system_nano1xx.h
+.\obj\nano1xx_spi.o: .\Include\nano1xx_spi.h
+.\obj\nano1xx_spi.o: .\Include\nano1xx_assert.h

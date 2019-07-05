@@ -1,0 +1,202 @@
+ARM Linker, 5.03 [Build 76] [MDK-ARM Standard]
+
+==============================================================================
+
+Small function inlining results
+
+Inlined total of 0 calls.
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x000000d5
+
+  Load Region LR_1 (Base: 0x00000000, Size: 0x00001578, Max: 0xffffffff, ABSOLUTE)
+
+    Execution Region ER_RO (Base: 0x00000000, Size: 0x0000152c, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x000000c0   Data   RO            3    RESET               startup_nano1xx.o
+    0x000000c0   0x00000000   Code   RO         1190  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x000000c0   0x00000004   Code   RO         1200    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x000000c4   0x00000004   Code   RO         1203    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x000000c8   0x00000000   Code   RO         1205    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x000000c8   0x00000000   Code   RO         1207    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x000000c8   0x00000008   Code   RO         1208    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x000000d0   0x00000000   Code   RO         1210    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
+    0x000000d0   0x00000000   Code   RO         1212    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
+    0x000000d0   0x00000004   Code   RO         1201    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x000000d4   0x0000004c   Code   RO            4  * .text               startup_nano1xx.o
+    0x00000120   0x0000002c   Code   RO         1191    .text               mc_p.l(uidiv.o)
+    0x0000014c   0x00000024   Code   RO         1195    .text               mc_p.l(memseta.o)
+    0x00000170   0x00000024   Code   RO         1214    .text               mc_p.l(init.o)
+    0x00000194   0x00000024   Code   RO          160    i.ADC_IRQHandler    nano1xx_isr.o
+    0x000001b8   0x00000068   Code   RO          963    i.CalulateCRC       rc522.o
+    0x00000220   0x0000001e   Code   RO          964    i.ClearBitMask      rc522.o
+    0x0000023e   0x0000000e   Code   RO          854    i.Delay_10_uS       ht1621.o
+    0x0000024c   0x00000094   Code   RO          855    i.DispInit          ht1621.o
+    0x000002e0   0x0000001e   Code   RO          857    i.Display           ht1621.o
+    0x000002fe   0x00000002   PAD
+    0x00000300   0x00000070   Code   RO          161    i.EINT0_IRQHandler  nano1xx_isr.o
+    0x00000370   0x00000084   Code   RO          162    i.EINT1_IRQHandler  nano1xx_isr.o
+    0x000003f4   0x0000000c   Code   RO          858    i.GPIO_ClrBit       ht1621.o
+    0x00000400   0x0000000c   Code   RO          965    i.GPIO_ClrBit       rc522.o
+    0x0000040c   0x0000000c   Code   RO         1131    i.GPIO_ClrBit       public.o
+    0x00000418   0x00000024   Code   RO           97    i.GPIO_EnableEINT0  nano1xx_gpio.o
+    0x0000043c   0x00000024   Code   RO           98    i.GPIO_EnableEINT1  nano1xx_gpio.o
+    0x00000460   0x0000000a   Code   RO          793    i.GPIO_Open         main.o
+    0x0000046a   0x0000000c   Code   RO          859    i.GPIO_SetBit       ht1621.o
+    0x00000476   0x0000000c   Code   RO          966    i.GPIO_SetBit       rc522.o
+    0x00000482   0x00000002   PAD
+    0x00000484   0x000001f4   Code   RO          794    i.IOInit            main.o
+    0x00000678   0x0000003c   Code   RO          860    i.LCD_INIT          ht1621.o
+    0x000006b4   0x0000004c   Code   RO         1133    i.Leave_PowerDown   public.o
+    0x00000700   0x0000005c   Code   RO          967    i.M500PcdConfigISOType  rc522.o
+    0x0000075c   0x00000014   Code   RO          101    i.NVIC_EnableIRQ    nano1xx_gpio.o
+    0x00000770   0x00000014   Code   RO          163    i.PDWU_IRQHandler   nano1xx_isr.o
+    0x00000784   0x0000000c   Code   RO          968    i.PcdAntennaOff     rc522.o
+    0x00000790   0x0000001a   Code   RO          969    i.PcdAntennaOn      rc522.o
+    0x000007aa   0x00000070   Code   RO          970    i.PcdAnticoll       rc522.o
+    0x0000081a   0x00000066   Code   RO          971    i.PcdAuthState      rc522.o
+    0x00000880   0x00000138   Code   RO          973    i.PcdComMF522       rc522.o
+    0x000009b8   0x0000002e   Code   RO          974    i.PcdHalt           rc522.o
+    0x000009e6   0x00000052   Code   RO          975    i.PcdRead           rc522.o
+    0x00000a38   0x00000056   Code   RO          976    i.PcdRequest        rc522.o
+    0x00000a8e   0x00000002   PAD
+    0x00000a90   0x0000007c   Code   RO          977    i.PcdReset          rc522.o
+    0x00000b0c   0x0000006e   Code   RO          978    i.PcdSelect         rc522.o
+    0x00000b7a   0x00000002   PAD
+    0x00000b7c   0x00000090   Code   RO          981    i.Rc522Init         rc522.o
+    0x00000c0c   0x00000074   Code   RO          982    i.ReadRawRC         rc522.o
+    0x00000c80   0x00000098   Code   RO         1135    i.RestorePinSetting  public.o
+    0x00000d18   0x00000018   Code   RO          861    i.SENDCOMA          ht1621.o
+    0x00000d30   0x0000001a   Code   RO          862    i.SENDCOMB          ht1621.o
+    0x00000d4a   0x00000008   Code   RO          983    i.SPI_ClrSS         rc522.o
+    0x00000d52   0x00000002   PAD
+    0x00000d54   0x0000006c   Code   RO          240    i.SPI_GetSourceClockFreq  nano1xx_spi.o
+    0x00000dc0   0x00000050   Code   RO          241    i.SPI_Init          nano1xx_spi.o
+    0x00000e10   0x0000000a   Code   RO          984    i.SPI_IsBusy        rc522.o
+    0x00000e1a   0x00000002   PAD
+    0x00000e1c   0x000000ec   Code   RO          242    i.SPI_Open          nano1xx_spi.o
+    0x00000f08   0x00000014   Code   RO          243    i.SPI_SetBitLength  nano1xx_spi.o
+    0x00000f1c   0x000000ac   Code   RO          244    i.SPI_SetClockFreq  nano1xx_spi.o
+    0x00000fc8   0x0000000c   Code   RO          985    i.SPI_SetSS         rc522.o
+    0x00000fd4   0x0000001e   Code   RO          250    i.SPI_SingleRead    nano1xx_spi.o
+    0x00000ff2   0x0000001e   Code   RO          251    i.SPI_SingleWrite   nano1xx_spi.o
+    0x00001010   0x00000050   Code   RO           13    i.SYS_GetHCLKFreq   nano1xx_sys.o
+    0x00001060   0x0000007c   Code   RO           14    i.SYS_GetPLLClockFreq  nano1xx_sys.o
+    0x000010dc   0x0000004c   Code   RO          863    i.SendBit           ht1621.o
+    0x00001128   0x0000000e   Code   RO          864    i.SendByte          ht1621.o
+    0x00001136   0x0000001e   Code   RO          986    i.SetBitMask        rc522.o
+    0x00001154   0x00000118   Code   RO          755    i.SetSystemClock    system_nano1xx.o
+    0x0000126c   0x00000044   Code   RO          865    i.Start_spi         ht1621.o
+    0x000012b0   0x00000068   Code   RO          795    i.SysInit           main.o
+    0x00001318   0x00000008   Code   RO          757    i.SystemInit        system_nano1xx.o
+    0x00001320   0x0000007c   Code   RO          164    i.TMR0_IRQHandler   nano1xx_isr.o
+    0x0000139c   0x00000058   Code   RO          987    i.WriteRawRC        rc522.o
+    0x000013f4   0x0000000e   Code   RO         1218    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x00001402   0x00000002   Code   RO         1219    i.__scatterload_null  mc_p.l(handlers.o)
+    0x00001404   0x0000000e   Code   RO         1220    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x00001412   0x00000002   PAD
+    0x00001414   0x0000001c   Code   RO          866    i.delay1s           ht1621.o
+    0x00001430   0x00000018   Code   RO          988    i.delay_10ms        rc522.o
+    0x00001448   0x00000030   Code   RO         1137    i.delay_loop        public.o
+    0x00001478   0x00000094   Code   RO          796    i.main              main.o
+    0x0000150c   0x00000020   Data   RO         1216    Region$$Table       anon$$obj.o
+
+
+    Execution Region ER_RW (Base: 0x20000000, Size: 0x0000004c, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00000002   Data   RW          165    .data               nano1xx_isr.o
+    0x20000002   0x00000014   Data   RW          868    .data               ht1621.o
+    0x20000016   0x00000002   PAD
+    0x20000018   0x00000034   Data   RW         1139    .data               public.o
+
+
+    Execution Region ER_ZI (Base: 0x2000004c, Size: 0x0000066c, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x2000004c   0x0000001e   Zero   RW          867    .bss                ht1621.o
+    0x2000006a   0x00000002   PAD
+    0x2000006c   0x00000148   Zero   RW         1138    .bss                public.o
+    0x200001b4   0x00000004   PAD
+    0x200001b8   0x00000500   Zero   RW            1    STACK               startup_nano1xx.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       512         28          0         20         30       8700   ht1621.o
+       762         36          0          0          0       6642   main.o
+        92          6          0          0          0       7538   nano1xx_gpio.o
+       424        106          0          2          0     135007   nano1xx_isr.o
+       676         52          0          0          0       7380   nano1xx_spi.o
+       204         22          0          0          0     136468   nano1xx_sys.o
+       288         42          0         52        328       7912   public.o
+      1694         42          0          0          0      15805   rc522.o
+        76         32        192          0       1280        620   startup_nano1xx.o
+       288         18          0          0          0       1418   system_nano1xx.o
+
+    ----------------------------------------------------------------------
+      5028        384        224         76       1644     327490   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+        12          0          0          2          6          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+        36          0          0          0          0        100   memseta.o
+        44          0          0          0          0         72   uidiv.o
+
+    ----------------------------------------------------------------------
+       168         16          0          0          0        240   Library Totals
+         2          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       166         16          0          0          0        240   mc_p.l
+
+    ----------------------------------------------------------------------
+       168         16          0          0          0        240   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      5196        400        224         76       1644     325082   Grand Totals
+      5196        400        224         76       1644     325082   ELF Image Totals
+      5196        400        224         76          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 5420 (   5.29kB)
+    Total RW  Size (RW Data + ZI Data)              1720 (   1.68kB)
+    Total ROM Size (Code + RO Data + RW Data)       5496 (   5.37kB)
+
+==============================================================================
+

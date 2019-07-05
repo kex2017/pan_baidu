@@ -1,0 +1,97 @@
+C51 COMPILER V9.52.0.0   MAIN                                                              12/07/2014 15:55:12 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN MAIN.OBJ
+COMPILER INVOKED BY: D:\Keil_v5\C51\BIN\C51.EXE MAIN.C OPTIMIZE(8,SPEED) BROWSE TABS(2)
+
+line level    source
+
+   1          #include "reg52.h"
+   2          #include "main.h"
+   3          #include "mfrc522.h"  
+   4          
+   5          unsigned char code DefaultKey[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
+   6          unsigned char data TagType[2];
+   7          unsigned char data SelectedSnr[4]; 
+   8          
+   9          
+  10          /////////////////////////////////////////////////////////////////////
+  11          //系统初始化
+  12          /////////////////////////////////////////////////////////////////////
+  13          void InitializeSystem()
+  14          {
+  15   1        P0 = 0xFF; P1 = 0xFF; P3 = 0xFF;
+  16   1        
+  17   1        LED_GREEN = 1;
+  18   1        delay_10ms(10);
+  19   1        PcdReset();
+  20   1        PcdAntennaOff(); 
+  21   1        PcdAntennaOn();  
+  22   1      //  M500PcdConfigISOType( 'A' );
+  23   1        LED_GREEN = 0;
+  24   1        delay_10ms(10); 
+  25   1        LED_GREEN = 1;
+  26   1        delay_10ms(10);
+  27   1        LED_GREEN = 0;
+  28   1        delay_10ms(10); 
+  29   1        LED_GREEN = 1;
+  30   1      }
+  31          
+  32            void main( )
+  33          {
+  34   1        char status;
+  35   1        unsigned char snr, buf[16];    
+  36   1      
+  37   1          InitializeSystem( );
+  38   1          while (1)
+  39   1          {
+  40   2          status= PcdRequest(REQ_ALL,TagType);
+  41   2          if(!status)
+  42   2          {
+  43   3            status = PcdAnticoll(SelectedSnr);
+  44   3            if(!status)
+  45   3            {
+  46   4              status=PcdSelect(SelectedSnr);
+  47   4              if(!status)
+  48   4              {
+  49   5                snr = 1;  //扇区号1
+  50   5                status = PcdAuthState(KEYA, (snr*4+3), DefaultKey, SelectedSnr);// 校验1扇区密码，密码位于每一扇
+             -区第3块
+  51   5                {
+  52   6                  if(!status)
+  53   6                  {
+  54   7                    status = PcdRead((snr*4+0), buf);  // 读卡，读取1扇区0块数据到buf[0]-buf[16] 
+C51 COMPILER V9.52.0.0   MAIN                                                              12/07/2014 15:55:12 PAGE 2   
+
+  55   7                    //status = PcdWrite((snr*4+0), buf);  // 写卡，将buf[0]-buf[16]写入1扇区0块
+  56   7                    if(!status)
+  57   7                    {
+  58   8                      //读写成功，点亮LED
+  59   8                      LED_GREEN = 0;  
+  60   8                      WaitCardOff();
+  61   8                    }
+  62   7                  }
+  63   6                }
+  64   5              }
+  65   4            }
+  66   3          } 
+  67   2          LED_GREEN = 1; 
+  68   2        }
+  69   1      }
+  70          
+  71          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    159    ----
+   CONSTANT SIZE    =      6    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      6      17
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

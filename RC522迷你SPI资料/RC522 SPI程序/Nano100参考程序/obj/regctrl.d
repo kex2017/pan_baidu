@@ -1,0 +1,11 @@
+.\obj\regctrl.o: Users\RegCtrl.c
+.\obj\regctrl.o: .\Include\nano1xx_gpio.h
+.\obj\regctrl.o: .\Include\nano1xx.h
+.\obj\regctrl.o: C:\Keil\ARM\RV31\INC\core_cm0.h
+.\obj\regctrl.o: C:\Keil\ARM\RV31\INC\stdint.h
+.\obj\regctrl.o: .\Include\system_nano1xx.h
+.\obj\regctrl.o: .\Include\nano1xx_spi.h
+.\obj\regctrl.o: .\Include\nano1xx_assert.h
+.\obj\regctrl.o: Users\public.h
+.\obj\regctrl.o: Users\Rc522Reg.h
+.\obj\regctrl.o: Users\ErrCode.h

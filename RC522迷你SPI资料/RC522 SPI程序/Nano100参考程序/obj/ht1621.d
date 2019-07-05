@@ -1,0 +1,11 @@
+.\obj\ht1621.o: Users\ht1621.c
+.\obj\ht1621.o: D:\Keil\ARM\ARMCC\bin\..\include\string.h
+.\obj\ht1621.o: .\Include\nano1xx_gpio.h
+.\obj\ht1621.o: .\Include\nano1xx.h
+.\obj\ht1621.o: D:\Keil\ARM\CMSIS\Include\core_cm0.h
+.\obj\ht1621.o: D:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\obj\ht1621.o: D:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+.\obj\ht1621.o: D:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+.\obj\ht1621.o: .\Include\system_nano1xx.h
+.\obj\ht1621.o: Users\public.h
+.\obj\ht1621.o: Users\ht1621.h

@@ -1,0 +1,16 @@
+.\obj\main.o: Users\main.c
+.\obj\main.o: D:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\obj\main.o: .\Include\nano1xx_sys.h
+.\obj\main.o: .\Include\nano1xx.h
+.\obj\main.o: D:\Keil\ARM\CMSIS\Include\core_cm0.h
+.\obj\main.o: D:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\obj\main.o: D:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+.\obj\main.o: D:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+.\obj\main.o: .\Include\system_nano1xx.h
+.\obj\main.o: .\Include\nano1xx_gpio.h
+.\obj\main.o: .\Include\nano1xx_spi.h
+.\obj\main.o: .\Include\nano1xx_assert.h
+.\obj\main.o: Users\public.h
+.\obj\main.o: Users\ht1621.h
+.\obj\main.o: Users\mfrc522.h
+.\obj\main.o: Users\EEPROM_24LC64.h

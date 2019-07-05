@@ -1,0 +1,11 @@
+.\obj\eeprom_24lc64.o: Users\EEPROM_24LC64.c
+.\obj\eeprom_24lc64.o: C:\Keil\ARM\RV31\INC\stdio.h
+.\obj\eeprom_24lc64.o: .\Include\nano1xx.h
+.\obj\eeprom_24lc64.o: C:\Keil\ARM\RV31\INC\core_cm0.h
+.\obj\eeprom_24lc64.o: C:\Keil\ARM\RV31\INC\stdint.h
+.\obj\eeprom_24lc64.o: .\Include\system_nano1xx.h
+.\obj\eeprom_24lc64.o: .\Include\nano1xx_sys.h
+.\obj\eeprom_24lc64.o: .\Include\nano1xx_gpio.h
+.\obj\eeprom_24lc64.o: .\Include\nano1xx_i2c.h
+.\obj\eeprom_24lc64.o: Users\public.h
+.\obj\eeprom_24lc64.o: Users\EEPROM_24LC64.h

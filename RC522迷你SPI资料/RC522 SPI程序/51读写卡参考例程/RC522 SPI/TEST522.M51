@@ -1,0 +1,190 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        12/07/2014  15:55:13  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+D:\KEIL_V5\C51\BIN\BL51.EXE MAIN.obj, RC522.obj TO TEST522 RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  MAIN.obj (MAIN)
+  RC522.obj (RC522)
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C?CLDOPTR)
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C?CSTPTR)
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C?CSTOPTR)
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C?ISTPTR)
+
+
+LINK MAP OF MODULE:  TEST522 (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     003FH     UNIT         _DATA_GROUP_
+            DATA    0047H     0017H     UNIT         ?DT?_PCDWRITE?RC522
+            DATA    005EH     0015H     UNIT         ?DT?PCDHALT?RC522
+            DATA    0073H     0006H     UNIT         ?DT?MAIN
+            IDATA   0079H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     018CH     UNIT         ?PR?_PCDCOMMF522?RC522
+            CODE    018FH     0080H     UNIT         ?C?LIB_CODE
+            CODE    020FH     007CH     UNIT         ?PR?_CALULATECRC?RC522
+            CODE    028BH     007BH     UNIT         ?PR?_PCDANTICOLL?RC522
+            CODE    0306H     007BH     UNIT         ?PR?_PCDSELECT?RC522
+            CODE    0381H     007BH     UNIT         ?PR?_PCDWRITE?RC522
+            CODE    03FCH     0075H     UNIT         ?PR?_PCDAUTHSTATE?RC522
+            CODE    0471H     0069H     UNIT         ?PR?_PCDREQUEST?RC522
+            CODE    04DAH     0067H     UNIT         ?PR?_PCDREAD?RC522
+            CODE    0541H     0066H     UNIT         ?PR?MAIN?MAIN
+            CODE    05A7H     004BH     UNIT         ?PR?_M500PCDCONFIGISOTYPE?RC522
+            CODE    05F2H     0041H     UNIT         ?PR?_READRAWRC?RC522
+            CODE    0633H     003FH     UNIT         ?PR?_WRITERAWRC?RC522
+            CODE    0672H     003EH     UNIT         ?PR?PCDRESET?RC522
+            CODE    06B0H     003DH     UNIT         ?PR?PCDHALT?RC522
+            CODE    06EDH     0039H     UNIT         ?PR?INITIALIZESYSTEM?MAIN
+            CODE    0726H     0020H     UNIT         ?PR?_DELAY_10MS?RC522
+            CODE    0746H     001CH     UNIT         ?PR?WAITCARDOFF?RC522
+            CODE    0762H     0012H     UNIT         ?PR?_CLEARBITMASK?RC522
+            CODE    0774H     0012H     UNIT         ?PR?PCDANTENNAON?RC522
+            CODE    0786H     000DH     UNIT         ?PR?_SETBITMASK?RC522
+            CODE    0793H     000CH     UNIT         ?C_C51STARTUP
+            CODE    079FH     0007H     UNIT         ?PR?PCDANTENNAOFF?RC522
+            CODE    07A6H     0006H     UNIT         ?CO?MAIN
+
+BL51 BANKED LINKER/LOCATER V6.22                                                      12/07/2014  15:55:13  PAGE 2
+
+
+
+
+OVERLAY MAP OF MODULE:   TEST522 (MAIN)
+
+
+SEGMENT                                   DATA_GROUP 
+  +--> CALLED SEGMENT                   START    LENGTH
+-------------------------------------------------------
+?C_C51STARTUP                           -----    -----
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN                           0008H    0011H
+  +--> ?PR?INITIALIZESYSTEM?MAIN
+  +--> ?PR?_PCDREQUEST?RC522
+  +--> ?PR?_PCDANTICOLL?RC522
+  +--> ?PR?_PCDSELECT?RC522
+  +--> ?CO?MAIN
+  +--> ?PR?_PCDAUTHSTATE?RC522
+  +--> ?PR?_PCDREAD?RC522
+  +--> ?PR?WAITCARDOFF?RC522
+
+?PR?INITIALIZESYSTEM?MAIN               -----    -----
+  +--> ?PR?_DELAY_10MS?RC522
+  +--> ?PR?PCDRESET?RC522
+  +--> ?PR?PCDANTENNAOFF?RC522
+  +--> ?PR?PCDANTENNAON?RC522
+
+?PR?PCDRESET?RC522                      -----    -----
+  +--> ?PR?_WRITERAWRC?RC522
+
+?PR?PCDANTENNAOFF?RC522                 -----    -----
+  +--> ?PR?_CLEARBITMASK?RC522
+
+?PR?_CLEARBITMASK?RC522                 -----    -----
+  +--> ?PR?_READRAWRC?RC522
+  +--> ?PR?_WRITERAWRC?RC522
+
+?PR?PCDANTENNAON?RC522                  -----    -----
+  +--> ?PR?_READRAWRC?RC522
+  +--> ?PR?_SETBITMASK?RC522
+
+?PR?_SETBITMASK?RC522                   -----    -----
+  +--> ?PR?_READRAWRC?RC522
+  +--> ?PR?_WRITERAWRC?RC522
+
+?PR?_PCDREQUEST?RC522                   001BH    0018H
+  +--> ?PR?_CLEARBITMASK?RC522
+  +--> ?PR?_WRITERAWRC?RC522
+  +--> ?PR?_SETBITMASK?RC522
+  +--> ?PR?_PCDCOMMF522?RC522
+
+?PR?_PCDCOMMF522?RC522                  0036H    0011H
+  +--> ?PR?_WRITERAWRC?RC522
+  +--> ?PR?_CLEARBITMASK?RC522
+  +--> ?PR?_SETBITMASK?RC522
+  +--> ?PR?_READRAWRC?RC522
+
+BL51 BANKED LINKER/LOCATER V6.22                                                      12/07/2014  15:55:13  PAGE 3
+
+
+?PR?_PCDANTICOLL?RC522                  0019H    0019H
+  +--> ?PR?_CLEARBITMASK?RC522
+  +--> ?PR?_WRITERAWRC?RC522
+  +--> ?PR?_PCDCOMMF522?RC522
+  +--> ?PR?_SETBITMASK?RC522
+
+?PR?_PCDSELECT?RC522                    0019H    0017H
+  +--> ?PR?_CALULATECRC?RC522
+  +--> ?PR?_CLEARBITMASK?RC522
+  +--> ?PR?_PCDCOMMF522?RC522
+
+?PR?_CALULATECRC?RC522                  0030H    0008H
+  +--> ?PR?_CLEARBITMASK?RC522
+  +--> ?PR?_WRITERAWRC?RC522
+  +--> ?PR?_SETBITMASK?RC522
+  +--> ?PR?_READRAWRC?RC522
+
+?PR?_PCDAUTHSTATE?RC522                 0019H    001DH
+  +--> ?PR?_PCDCOMMF522?RC522
+  +--> ?PR?_READRAWRC?RC522
+
+?PR?_PCDREAD?RC522                      0019H    0017H
+  +--> ?PR?_CALULATECRC?RC522
+  +--> ?PR?_PCDCOMMF522?RC522
+
+?PR?WAITCARDOFF?RC522                   0019H    0002H
+  +--> ?PR?_PCDREQUEST?RC522
+  +--> ?PR?_DELAY_10MS?RC522
+
+
+
+SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        ?C?CLDOPTR
+  C:018FH         PUBLIC        ?C?CLDOPTR
+  -------         ENDMOD        ?C?CLDOPTR
+
+  -------         MODULE        ?C?CSTPTR
+  C:01BCH         PUBLIC        ?C?CSTPTR
+  -------         ENDMOD        ?C?CSTPTR
+
+  -------         MODULE        ?C?CSTOPTR
+  C:01CEH         PUBLIC        ?C?CSTOPTR
+  -------         ENDMOD        ?C?CSTOPTR
+
+  -------         MODULE        ?C?ISTPTR
+  C:01F0H         PUBLIC        ?C?ISTPTR
+  -------         ENDMOD        ?C?ISTPTR
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_PCDWRITE?RC522
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?PCDHALT?RC522
+BL51 BANKED LINKER/LOCATER V6.22                                                      12/07/2014  15:55:13  PAGE 4
+
+
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_M500PCDCONFIGISOTYPE?RC522
+
+Program Size: data=122.0 xdata=0 code=1964
+LINK/LOCATE RUN COMPLETE.  3 WARNING(S),  0 ERROR(S)

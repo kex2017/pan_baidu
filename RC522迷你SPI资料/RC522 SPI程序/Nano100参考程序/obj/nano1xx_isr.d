@@ -1,0 +1,9 @@
+.\obj\nano1xx_isr.o: Libraries\nano1xx_isr.c
+.\obj\nano1xx_isr.o: D:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\obj\nano1xx_isr.o: .\Include\nano1xx.h
+.\obj\nano1xx_isr.o: D:\Keil\ARM\CMSIS\Include\core_cm0.h
+.\obj\nano1xx_isr.o: D:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+.\obj\nano1xx_isr.o: D:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+.\obj\nano1xx_isr.o: .\Include\system_nano1xx.h
+.\obj\nano1xx_isr.o: .\Include\nano1xx_gpio.h
+.\obj\nano1xx_isr.o: .\Users\public.h
